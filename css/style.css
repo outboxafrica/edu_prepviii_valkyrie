@@ -1,0 +1,111 @@
+/* padding for whole body */
+
+body {
+    padding-top: 100px;
+}
+
+
+/* styling body */
+
+#welcome-section {
+    background-color: grey;
+    text-decoration-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+p {
+    font-size: 20px;
+}
+
+#team-section {
+    padding: 10px;
+    max-width: 100%;
+    margin: auto;
+    background-color: burlywood;
+}
+
+.profiles {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    display: flexbox;
+    border-radius: 20px;
+    background-color: chocolate;
+    padding: 5px;
+}
+
+.profiles:hover {
+    color: lightblue;
+}
+
+
+/* row and column decoration */
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.row>.column {
+    padding: 20px;
+}
+
+.column {
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+}
+
+.intro {
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
+
+/* content decoration */
+
+.content {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    display: flexbox;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#project-section {
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+    background-color: gray;
+}
+
+.project-content {
+    padding: 5px;
+    display: flex;
+}
+
+.project-content>.project-item {
+    padding: 20px;
+}
+
+.project-item {
+    float: left;
+    width: 40%;
+    text-align: justify;
+}
