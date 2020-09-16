@@ -1,0 +1,114 @@
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgba(80, 115, 100);
+    color: rgba(98,80,60);
+    font-family: "Poiret One", cursive "sans serif";
+    font-size: 2rem;
+    position:sticky;
+    top:20px;
+    margin:20,20,20,20;
+    padding:0,0,0,0;
+    height:50px
+    
+    
+    
+  }
+  .navlink-item {
+    display:flex;
+    margin-right: 20px;
+    align-content:flex-end;
+    text-decoration:none;
+  
+    
+  }
+  .navlink-item:hover {
+    background-color: gray;
+  }
+  
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+  #welcome-section{
+      font-family: 'Comfortaa', cursive'Roboto';
+      font-size:3rem;
+      color:black;
+      
+  }
+  .subheading{
+      font-family: 'Megrim', cursive 'Open sans'; 
+      font-size:4rem;
+      color:black;
+      
+  }
+  .photo{
+    border-radius:16%;
+    border-style: block;
+    width:200px;
+    display:flex;
+    float:right;
+    justify-content: safe;
+
+    
+    
+  }
+    .one{
+      display:flex;
+      flex-direction: column;
+      flex-flow:column wrap;
+      text-decoration: none;
+      
+    }
+    .text{
+      font-family:'Kufam', cursive 'Sans serif' ;
+      font-size: 2rem;
+      color:black;
+      text-decoration: none;
+      display:flex;
+      align-items: center;
+    }
+  body{
+    background-color: slateblue;
+  }
+  #welcome-section{
+    height:100%
+  }
+  @media(max-width:300px){
+  body{
+    background-color:blue
+  }
+  }
+  .contact{
+    list-style-type:none;
+    font-size:bold;
+    color:yellowgreen;
+    display:inline-flex;
+    background-color: rgba(80, 115, 100);
+    line-height: 50px;
+    float:right;
+    font-weight: bold;
+    font-size: large;
+    margin-right: 90px;
+    text-decoration:none;
+  }
+  .end{
+    background-color: rgba(80, 115, 100);
+  }
+  footer{
+    font-weight:bold;
+    font-size: 1rem;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+    text-decoration:none;
+  }
+  #projects{
+    text-decoration: none;
+  }
+  .profile-link{
+    text-decoration:none;
+  }
