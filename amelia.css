@@ -4,7 +4,7 @@
     align-items: center;
     background-color: rgba(80, 115, 100);
     color: rgba(98,80,60);
-    font-family: "Poiret One", cursive "open sans";
+    font-family: "Poiret One", cursive "sans serif";
     font-size: 2rem;
     position:sticky;
     top:20px;
@@ -18,7 +18,8 @@
   .navlink-item {
     display:flex;
     margin-right: 20px;
-    align-content:flex-end
+    align-content:flex-end;
+    text-decoration:none;
   
     
   }
@@ -34,13 +35,13 @@
       font-family: 'Comfortaa', cursive'Roboto';
       font-size:3rem;
       color:black;
-      text-decoration: none;
+      
   }
   .subheading{
       font-family: 'Megrim', cursive 'Open sans'; 
       font-size:4rem;
       color:black;
-      text-decoration: none;
+      
   }
   .photo{
     border-radius:16%;
@@ -86,10 +87,11 @@
     display:inline-flex;
     background-color: rgba(80, 115, 100);
     line-height: 50px;
-    float:right 50px;
+    float:right;
     font-weight: bold;
     font-size: large;
     margin-right: 90px;
+    text-decoration:none;
   }
   .end{
     background-color: rgba(80, 115, 100);
@@ -104,5 +106,9 @@
   body{
     text-decoration:none;
   }
-  
-  
+  #projects{
+    text-decoration: none;
+  }
+  .profile-link{
+    text-decoration:none;
+  }
