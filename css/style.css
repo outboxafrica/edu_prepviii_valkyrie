@@ -1,5 +1,7 @@
   body {
-      padding-top: 100px;
+      padding-top: 80px;
+      background-image: url('../images/image1.png');
+      background-size: cover;
   }
   
   #nav-bar {
@@ -12,12 +14,39 @@
   }
   
   #welcome-section {
-      background-color: grey;
+      background-color: wheat;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
+      margin-bottom: 5px;
+  }
+  
+  ul {
+      list-style-type: none;
+      display: block;
+      width: 100%;
+      padding: 5px;
+      text-align: right;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 20px;
+  }
+  
+  ul li {
+      display: inline-flex;
+  }
+  
+  li a {
+      display: flex;
+      padding: 10px 10px;
+      text-decoration: none;
+      font-size: 25px;
+      padding-right: 30px;
+  }
+  
+  li a:hover {
+      background: azure;
   }
   
   p {
@@ -29,8 +58,13 @@
   }
   
   #team-section {
-      padding: 10px;
+      background-color: white;
       max-width: 100%;
+      margin-bottom: 5px;
+  }
+  
+  .individual-link {
+      padding: 2px 16px;
   }
   
   .profiles {
@@ -39,7 +73,6 @@
       color: black;
       display: flexbox;
       border-radius: 20px;
-      background-color: chocolate;
       padding: 5px;
   }
   
@@ -61,6 +94,11 @@
       float: left;
       width: 40%;
       text-align: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0.1, 0, 0.2);
+      background-color: azure;
+      border-radius: 5px;
+      margin-right: 10px;
+      ;
   }
   
   .row:after {
@@ -78,6 +116,12 @@
       border-radius: 50%;
   }
   /* content decoration */
+  
+  @media screen and (max-width: 600px) {
+      .column {
+          width: 100%;
+      }
+  }
   
   .content {
       padding: 10px;
