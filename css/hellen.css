@@ -8,11 +8,14 @@
                            }
                            
                            #welcome {
-                               background-color: gainsboro;
+                               background-image: url('../images/image2.png');
                                display: flex;
+                               background-size: cover;
+                               font-size: 20px;
                                align-items: center;
                                justify-content: center;
                                height: 100vh;
+                               color: white;
                                margin-bottom: 40px;
                            }
                            
