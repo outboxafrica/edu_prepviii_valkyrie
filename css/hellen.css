@@ -1,168 +1,236 @@
-                           #navbar {
-                               position: fixed;
-                               top: 0;
-                               width: 100%;
-                               height: 80px;
-                               background: #ADD8E6;
-                               display: flex;
-                           }
-                           
-                           #welcome {
-                               background-color: gainsboro;
-                               display: flex;
-                               align-items: center;
-                               justify-content: center;
-                               height: 100vh;
-                               margin-bottom: 40px;
-                           }
-                           
-                           #about {
-                               background-color: grey;
-                               margin-bottom: 40px;
-                               padding: 5px 10em 5px 8em;
-                           }
-                           
-                           #my-projects {
-                               background-color: gainsboro;
-                               display: flex;
-                               flex-direction: column;
-                               align-items: center;
-                               justify-content: center;
-                               height: 500px;
-                               margin-bottom: 40px;
-                           }
-                           
-                           #contact {
-                               background-color: grey;
-                               display: flex;
-                               flex-direction: column;
-                               align-items: center;
-                               justify-content: center;
-                               height: fit-content;
-                               margin-bottom: 40px;
-                           }
-                           
-                           span {
-                               font-weight: bold;
-                               margin-left: 80px;
-                           }
-                           
-                           p {
-                               font-size: 20px;
-                           }
-                           
-                           h3 {
-                               text-align: center;
-                           }
-                           
-                           ul {
-                               list-style-type: none;
-                               display: block;
-                               width: 100%;
-                               padding: 5px;
-                               text-align: right;
-                               font-family: "Times New Roman", Times, serif;
-                               font-size: 20px;
-                           }
-                           
-                           ul li {
-                               display: inline-flex;
-                           }
-                           
-                           li a {
-                               display: flex;
-                               padding: 10px 10px;
-                               text-decoration: none;
-                               font-size: 25px;
-                               padding-right: 30px;
-                           }
-                           
-                           li a:hover {
-                               background: azure;
-                           }
-                           
-                           a {
-                               text-decoration: none;
-                               text-align: center;
-                               color: black;
-                               display: flexbox;
-                               border-radius: 10px;
-                               padding: 5px;
-                           }
-                           
-                           .row {
-                               display: flex;
-                               align-items: center;
-                           }
-                           
-                           .column {
-                               float: left;
-                               width: 50%;
-                               text-align: center;
-                           }
-                           
-                           .row::after {
-                               content: "";
-                               clear: both;
-                               display: table;
-                           }
-                           
-                           img {
-                               border-radius: 50%;
-                           }
-                           
-                           .intro {
-                               display: flex;
-                               flex-direction: column;
-                               align-items: center;
-                           }
-                           
-                           .content {
-                               display: flex;
-                               border-spacing: 10px;
-                           }
-                           
-                           .item {
-                               float: left;
-                               text-align: justify;
-                               background: azure;
-                               width: 33%;
-                               height: 350px;
-                               border-radius: 20px;
-                               margin-right: 30px;
-                               padding: 20px;
-                           }
-                           
-                           .content a {
-                               font-size: larger;
-                               font-weight: bold;
-                               font-style: italic;
-                               color: blue;
-                           }
-                           
-                           .content::after {
-                               content: "";
-                               clear: both;
-                               display: table;
-                           }
-                           
-                           @media screen and (max-width: 500px) {
-                               .content {
-                                   width: 100%;
-                               }
-                           }
-                           
-                           .contact-item {
-                               float: left;
-                               margin-right: 50px;
-                               padding: 10px;
-                           }
-                           
-                           footer {
-                               display: flex;
-                           }
-                           
-                           footer p {
-                               font-size: 20px;
-                               padding: 20px;
-                           }
+body {
+    margin: 0;
+    padding-top: 70px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: white;
+}
+
+#welcome {
+    background-image: url('../images/me.jpg');
+    background-size: cover;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: 40px;
+    opacity: 1;
+}
+
+#welcome:hover {
+    opacity: 0.8;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    border-radius: 30%;
+}
+
+#about {
+    margin-bottom: 40px;
+}
+
+.row-about {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    border-style: solid;
+    border-width: 0.01px;
+    border-color: skyblue;
+    border-radius: 5px;
+    padding: 10px 10px;
+    height: fit-content;
+}
+
+.column-about-left {
+    align-items: center;
+    width: 25%;
+}
+
+.column-about-right {
+    float: left;
+    width: 70%;
+    text-align: justify;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column-about-right h2 {
+    text-align: center;
+}
+
+#my-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: #f1f2f4;
+}
+
+#contact {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    justify-content: center;
+    background-color: #393a3a;
+    height: fit-content;
+    width: 100%;
+    color: white;
+}
+
+.my-social {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+p {
+    font-size: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    text-align: right;
+    font-size: 20px;
+}
+
+ul li {
+    display: inline-flex;
+}
+
+li a {
+    display: flex;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    padding-right: 30px;
+    color: black;
+}
+
+li a:hover {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    display: flexbox;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+}
+
+.item {
+    text-align: justify;
+    float: left;
+    width: 20%;
+    padding: 0 30px;
+    text-align: justify;
+    margin-right: 10%;
+    padding: 10px;
+}
+
+.content a {
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    color: blue;
+}
+
+.content::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.contact-item {
+    float: left;
+    margin-right: 50px;
+    padding: 10px;
+}
+
+.contact-item img:hover {
+    opacity: 0.5;
+}
+
+footer {
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    color: white;
+    background-color: #393a3a;
+    height: 150px;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    font-size: 15px;
+}
+
+.footer-content P {
+    display: inline-flex;
+}
+
+.footer-content span {
+    align-self: flex-end;
+}
