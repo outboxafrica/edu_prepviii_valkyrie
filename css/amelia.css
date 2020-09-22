@@ -2,15 +2,16 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgba(80, 115, 100);
+    background-color: gray;
     color: rgba(98,80,60);
     font-family: "Poiret One", cursive "sans serif";
     font-size: 2rem;
     position:sticky;
-    top:20px;
-    margin:20,20,20,20;
-    padding:0,0,0,0;
-    height:50px
+    margin:0;
+    
+    
+  
+    
     
     
     
@@ -20,58 +21,60 @@
     margin-right: 20px;
     align-content:flex-end;
     text-decoration:none;
+    color: black;
   
     
   }
   .navlink-item:hover {
-    background-color: gray;
+    background-color:blueviolet;
   }
   
   ul {
-    display: flex;
+    
+    display:flex;
     list-style-type: none;
   }
   #welcome-section{
-      font-family: 'Comfortaa', cursive'Roboto';
-      font-size:3rem;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-size: 4rem;
       color:black;
       
   }
   .subheading{
-      font-family: 'Megrim', cursive 'Open sans'; 
+      font-family: 'Courier New', Courier, monospace;
       font-size:4rem;
       color:black;
       
   }
-  .photo{
-    border-radius:16%;
+  #pic{
+    border-radius: 14%;
     border-style: block;
     width:200px;
     display:flex;
     float:right;
-    justify-content: safe;
-
+    
+    
+    
     
     
   }
     .one{
       display:flex;
-      flex-direction: column;
-      flex-flow:column wrap;
-      text-decoration: none;
+      flex-direction: row;
+      justify-content: safe;
+  color: black;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 2rem;
+      
+      
+      
+      
+      
       
     }
-    .text{
-      font-family:'Kufam', cursive 'Sans serif' ;
-      font-size: 2rem;
-      color:black;
-      text-decoration: none;
-      display:flex;
-      align-items: center;
-    }
-  body{
-    background-color: slateblue;
-  }
+    
+  
+
   #welcome-section{
     height:100%
   }
@@ -83,23 +86,20 @@
   .contact{
     list-style-type:none;
     font-size:bold;
-    color:yellowgreen;
-    display:inline-flex;
-    background-color: rgba(80, 115, 100);
-    line-height: 50px;
-    float:right;
-    font-weight: bold;
-    font-size: large;
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: safe;
+     font-family: monospace;
     margin-right: 90px;
     text-decoration:none;
   }
-  .end{
-    background-color: rgba(80, 115, 100);
-  }
-  footer{
-    font-weight:bold;
-    font-size: 1rem;
-  }
+  
+  
+    
+    
+    
+
   html{
     scroll-behavior: smooth;
   }
@@ -109,6 +109,23 @@
   #projects{
     text-decoration: none;
   }
-  .profile-link{
-    text-decoration:none;
+  #profile-link{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: black;
+  }
+  .project-tile{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: black;
+
+  }
+  .end{
+    font-size:3rem;
+    font-family: monospace;
+    
+    
+  
+    
+    
   }
