@@ -67,10 +67,11 @@ img {
     border-radius: 5px;
     padding: 10px 10px;
     height: fit-content;
+    flex-wrap: wrap;
 }
 
 .column-about-left {
-    align-items: center;
+    text-align: center;
     width: 25%;
 }
 
@@ -90,6 +91,13 @@ img {
     text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+    .column-about-left,
+    .column-about-right {
+        width: 100%;
+    }
+}
+
 #my-projects {
     display: flex;
     flex-direction: column;
@@ -97,6 +105,7 @@ img {
     justify-content: center;
     height: 400px;
     background-color: #f1f2f4;
+    margin-bottom: 30px;
 }
 
 #contact {
@@ -120,7 +129,6 @@ img {
 
 span {
     font-weight: bold;
-    margin-left: 80px;
 }
 
 p {
@@ -183,10 +191,8 @@ a {
 }
 
 .content a {
-    font-size: larger;
-    font-weight: bold;
     font-style: italic;
-    color: blue;
+    color: rgb(75, 86, 243);
 }
 
 .content::after {
@@ -195,10 +201,11 @@ a {
     display: table;
 }
 
-@media screen and (max-width: 500px) {
-    .content {
+@media screen and (max-width: 800px) {
+    .item {
         width: 100%;
-        height: auto;
+        height: 300px;
+        margin-bottom: 5px;
     }
 }
 
@@ -217,20 +224,44 @@ footer {
 }
 
 .footer-content {
-    display: flex;
     color: white;
     background-color: #393a3a;
-    height: 150px;
-    justify-content: center;
     align-items: flex-end;
     width: 100%;
     font-size: 15px;
+    flex-wrap: wrap;
+    display: flex;
+    height: 200px;
 }
 
 .footer-content P {
     display: inline-flex;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
 }
 
 .footer-content span {
     align-self: flex-end;
+}
+
+@media screen and (max-width: 800px) {
+    .footer-content p {
+        width: 100%;
+        justify-content: left;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer-content {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #my-projects,
+    #contact {
+        height: auto;
+    }
 }
